@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Numerics;
@@ -21,6 +21,10 @@ namespace EstudandoUpcasting.Entities
         public void updateBalance()
         {
             Balance += Balance * InterestRate;
+        }
+        public override void Withdraw(double amount)
+        {
+            Balance -= amount;
         }
     }
 
